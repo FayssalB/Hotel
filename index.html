@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel</title>
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
 </head>
+
 <body>
     <section id="Ali"></section>
-    <section id="Fayssal"></section>
+
+    <section id="Fayssal">
+
+        <form action="" id="form1"class="">
+
+            <div class="">
+                <label for="Prénom">Prenom </label>
+                <input type="text" name="Prenom" id="prenom" required>
+            </div>
+            <div class="">
+                <label for="Nom">Nom </label>
+                <input type="text" name="Nom" id="nom" required>
+            </div>
+            <div class="">
+                <label for="Nbnuit">Nombre de nuit </label>
+                <input type="text" name="Nuit" id="nbnuit" required>
+            </div>
+
+            <label for="chambre-select">Chambre</label>
+
+            <select name="Chambre" id="chambre-select" required>
+                <option value="1" selected>Chambre 1 personne </option>
+                <option value="2" >Chambre 2 personnes</option>
+                <option value="4" >Chambre 4 personnes</option>
+                <option value="Loft">Loft</option>
+            </select>
+            
+            <div id="btnradio">
+                <label for="" >Petit déjeuner?</label>
+                <input type="radio" name="choix" value="Oui" id="dejoui">
+                <label for="dejoui">Oui</label>
+
+                <input type="radio" name="choix" value="Non" id="dejnon"><label for="dejnon">Non</label>
+            </div>
+
+            <div class="">
+                <input type="submit" id="submit" >
+            </div>
+        </form>
+
+        <form action="" id="form2">
+
+            <label for="firstname">Prenom</label>
+            <input type="text" id="firstname">
+
+            <label for="lastname">Nom</label>
+            <input type="text" id="lastname">
+
+            <div class="">
+                <input type="submit" id="submit2" >
+            </div>
+        </form>
+
+        
+    </section>
+    <script src="./js/main.js"></script>
 </body>
+
 </html>
